@@ -52,6 +52,23 @@ grocery_list.sort()
 del grocery_list[4]
 print(grocery_list)
 
+to_do_list2 = other_events + grocery_list
+print(len(to_do_list2))
+print(max(to_do_list2))
+print(min(to_do_list2))
+# Tuple
+pi_tuple = (3, 1, 4, 1, 5, 9)
 
+new_tuple = list(pi_tuple)
+new_list = tuple(new_tuple)
+
+len(new_list)
+min(new_list)
+max(new_list)
+# dictionaries 
+super_villains = {'Fiddler': 'Isaac Bowin',
+                  'Jim Darkmagic': 'Tim Rodgers',
+                  'The Pickler': 'Mark Mardon',
+                  'Rat Scratch': 'Peter Fin'}
 
 
