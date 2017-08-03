@@ -65,10 +65,66 @@ new_list = tuple(new_tuple)
 len(new_list)
 min(new_list)
 max(new_list)
-# dictionaries 
+# dictionaries
 super_villains = {'Fiddler': 'Isaac Bowin',
                   'Jim Darkmagic': 'Tim Rodgers',
                   'The Pickler': 'Mark Mardon',
                   'Rat Scratch': 'Peter Fin'}
 
+print(super_villains['The Pickler'])
 
+del super_villains['Fiddler']
+
+super_villains['Rat Scratch'] = 'Bob Tim'
+
+print(len(super_villains))
+
+print(super_villains.get('Jim Darkmagic'))
+
+print(super_villains.keys())
+
+print(super_villains.values())
+
+# conditionals
+
+age = 21
+
+if age > 16:
+    print('You can drive')
+else:
+    print('You can not drive yet')
+
+if age >= 21:
+    print('Have a drink')
+elif age >= 16:
+    print('Put the beer down')
+else:
+    print(' get out')
+
+if (age >= 1) and (age <=18):
+    print('You is person')
+elif (age == 21) or (age >= 65):
+    print('Get a Job')
+elif not(age == 30):
+    print('Home home Bill your drunk ')
+else:
+    print('What am I doing')
+
+# looping
+
+for x in range(0, 10):
+    print(x, ' ', end="")
+
+print('\n')
+
+for y in grocery_list:
+    print(y)
+
+for x in [2, 4, 6, 8, 10]:
+    print(x)
+
+num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
+
+for x in range(0, 3):
+    for y in range(0, 3):
+        print(num_list[x][y])
